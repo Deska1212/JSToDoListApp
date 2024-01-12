@@ -2,3 +2,13 @@ li.selected
 {
     background-color: lightblue;
 }
+
+li:hover
+{
+    border: solid #146C43 1px;
+}
+
+li.active
+{
+    background-color: #146C43 !important;
+}
