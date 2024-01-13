@@ -9,18 +9,31 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div class="text-center d-flex align-items-center justify-content-center" style="height: 100vh">
+    <div class="container" style="">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <div class="row content align-items-start">
-                <h1>To Do List</h1>
-                <div class="col align-items-center">
-                    <button class="btn btn-success w-100 mb-1" id="addButton">Add Task</button>
-                    <button class="btn btn-success w-100 mb-1" id="removeButton">Remove Task</button>
-                    <input id="taskNameInput" class="input-lg mb-1" placeholder="Add a new task..."></input>
-                    <div style="max-height: 400px; overflow-y: auto;">
+        <div class="row text-center">
+            <h1>To Do List</h1>
+        </div>
+
+        <!-- The -xs-X -sm-X -md-X size tags on columns basically mean on ALL devices above this size this column will span X amnt of columns-->
+        <!-- You can also specify the amount of cols you should take per screen e.g.col-s-12 col-m-6: On small screens take 12 cols, on medium take 6-->
+        <div class="row" style="">
+                <div class="col-sm-6 col-md-4">
+                    <div class="p-4 border bg-light task-control-box d-flex align-items-center">
+                        <div>
+                            <button class="btn w-100 btn-success mb-1" id="addButton">Add Task</button>
+                            <button class="btn w-100 btn-success mb-1" id="removeButton">Remove Task</button>
+                            <input id="taskNameInput" class="input-lg w-100 mb-1" placeholder="Add a new task..."></input>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-6 col-md-8">
+                    <div class="p-4">
                         <ol id="taskList" class="list-group mb-2"> </ol>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
     <footer class="bg-light container-fluid p-1 text-center fixed-bottom" style="height: 40px;">

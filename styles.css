@@ -5,10 +5,15 @@ li.selected
 
 li:hover
 {
-    border: solid #146C43 1px;
+    border: solid #146C43 2px;
 }
 
 li.active
 {
     background-color: #146C43 !important;
+}
+
+.task-control-box
+{
+    height: 200px;
 }
